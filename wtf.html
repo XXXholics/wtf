@@ -11,6 +11,10 @@
     <script type="text/javascript">
     function onTelegramAuth(user) {
         alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+        console.log('user all: ',user)
+        for (i in user) {
+            console.log( 'user i: ', user[i])
+        }
     }
     </script>
 </body>
